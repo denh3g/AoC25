@@ -2,8 +2,7 @@ export async function solveDay2(input: string): Promise<{ partA: number; partB: 
     let partA = 0;
     let partB = 0;
 
-    // Add your Day 2 solution logic here
-    // This is a placeholder based on the existing structure
+    // Day 2 Logic here
 
     return { partA, partB };
 }
