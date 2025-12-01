@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/dan.hague/code/AoC25/app/%5Bday%5D/solutions/day2/solver.ts"],"sourcesContent":["export async function solveDay2(input: string): Promise<{ partA: number; partB: number }> {\n    let partA = 0;\n    let partB = 0;\n\n    // Add your Day 2 solution logic here\n    // This is a placeholder based on the existing structure\n\n    return { partA, partB };\n}\n"],"names":[],"mappings":";;;;AAAO,eAAe,UAAU,KAAa;IACzC,IAAI,QAAQ;IACZ,IAAI,QAAQ;IAEZ,qCAAqC;IACrC,wDAAwD;IAExD,OAAO;QAAE;QAAO;IAAM;AAC1B"}}]
+}

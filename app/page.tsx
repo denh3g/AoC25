@@ -1,6 +1,19 @@
 import Link from "next/link";
+import getDays from "./components/getDays";
 
-export default function Home() {
+export default async function Home() {
+  const days = await getDays();
+  const availableDays = days
+    .map((slug) => ({
+      slug,
+      title: `Day ${slug.replace('day', '')}`,
+    }))
+    .sort((a, b) => {
+      const numA = parseInt(a.slug.replace('day', ''));
+      const numB = parseInt(b.slug.replace('day', ''));
+      return numA - numB;
+    });
+
   return (
     <div className="min-h-screen bg-gray-900 py-8">
       <div className="max-w-4xl mx-auto px-4">
@@ -14,11 +27,16 @@ export default function Home() {
               Solutions
             </h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
-              <li>
-                <Link href="/day1" className="text-blue-400 hover:text-blue-300 hover:underline">
-                  Day 1
-                </Link>
-              </li>
+              {availableDays.map((day) => (
+                <li key={day.slug}>
+                  <Link
+                    href={`/${day.slug}`}
+                    className="text-blue-400 hover:text-blue-300 hover:underline"
+                  >
+                    {day.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
