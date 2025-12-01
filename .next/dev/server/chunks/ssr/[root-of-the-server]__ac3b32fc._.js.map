@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/dan.hague/code/AoC25/app/components/Answer.tsx"],"sourcesContent":["export default function Answer({ a }) { \n return <p>{a ? `The answer is: ${a}` : \"answer goes here\"}</p>\n}"],"names":[],"mappings":";;;;;;AAAe,SAAS,OAAO,EAAE,CAAC,EAAE;IACnC,qBAAO,+PAAC;kBAAG,IAAI,CAAC,eAAe,EAAE,GAAG,GAAG;;;;;;AACxC"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file:///Users/dan.hague/code/AoC25/app/day1/page.tsx"],"sourcesContent":["import Answer from \"../components/Answer\";\nimport {promises as fs} from 'fs';\n\nexport default async function Day1() {\n    const a = '0';\n    \n    const file = await fs.readFile(process.cwd() + '/app/day1/sample.txt', 'utf8');\n\n    return(\n        <>\n            <h4>Day 1 Page</h4>\n            <Answer a={a}/>\n            <p>input: {file}</p>\n        </>\n    )\n}"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,eAAe;IAC1B,MAAM,IAAI;IAEV,MAAM,OAAO,MAAM,yGAAE,CAAC,QAAQ,CAAC,QAAQ,GAAG,KAAK,wBAAwB;IAEvE,qBACI;;0BACI,+PAAC;0BAAG;;;;;;0BACJ,+PAAC,wJAAM;gBAAC,GAAG;;;;;;0BACX,+PAAC;;oBAAE;oBAAQ;;;;;;;;;AAGvB"}}]
+}

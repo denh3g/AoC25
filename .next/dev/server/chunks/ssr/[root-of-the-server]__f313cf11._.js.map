@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/dan.hague/code/AoC25/app/day1/page.tsx"],"sourcesContent":["\nexport default function Day1() {\n    const a = 15;\n\n    return(\n        <>\n            <h4>Day 1 Page</h4>\n            <Answer a={a}/>\n        </>\n    )\n}"],"names":[],"mappings":";;;;;;AACe,SAAS;IACpB,MAAM,IAAI;IAEV,qBACI;;0BACI,+PAAC;0BAAG;;;;;;0BACJ,+PAAC;gBAAO,GAAG;;;;;;;;AAGvB"}}]
+}
