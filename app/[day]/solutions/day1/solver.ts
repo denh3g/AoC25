@@ -35,7 +35,7 @@ export async function solveDay1(input: string): Promise<{ partA: number; partB: 
 
     nums.forEach(n => {
         if (n === 0) {
-            partA = partA + 1;
+            partA++;
         }
     });
 

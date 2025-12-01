@@ -41,7 +41,7 @@ async function solveDay1(input) {
     });
     nums.forEach((n)=>{
         if (n === 0) {
-            partA = partA + 1;
+            partA++;
         }
     });
     return {
