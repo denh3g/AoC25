@@ -9,13 +9,24 @@ __turbopack_context__.s([
 async function solveDay2(input) {
     let partA = 0;
     let partB = 0;
-    // Add your Day 2 solution logic here
-    // This is a placeholder based on the existing structure
+    const ids = input.split(',');
+    ids.forEach((id)=>{
+        id = id.split('-');
+        for(let i = 0; i < id.length; i++){
+            const validID = validateIDs(id[i]);
+            ("TURBOPACK compile-time truthy", 1) ? partA++ : "TURBOPACK unreachable";
+        }
+    });
+    console.log('partA: ', partA);
     return {
         partA,
         partB
     };
 }
+const validateIDs = (id)=>{
+    console.log(id);
+    return true;
+};
 }),
 ];
 
