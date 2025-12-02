@@ -10,18 +10,22 @@ export async function solveDay2(input) {
         
         for (let i = ids[0]; i < upperRange; i++){
             let id = parseInt(i);
-            const isValid = validateIDs(id);
 
-            isValid ? "do nothing" : partA = partA + id ;
+            const pt1isValid = pt1Validator(id);
+            pt1isValid ? "do nothing" : partA = partA + id ;
+
+            const pt2isValid = pt2Validator(id);
+            pt2isValid ? "do nothing" : partB = partB + id ;
         }
     });
 
     console.log('partA: ', partA);
+    console.log('partB: ', partB);
 
     return { partA, partB };
 }
 
-const validateIDs = (id) => {
+const pt1Validator = (id) => {
     id = id.toString();
     var length = id.length;
     var first = id[0];
@@ -45,3 +49,56 @@ const validateIDs = (id) => {
 
     return true;
 }
+
+const pt2Validator = (id) => {
+    id = id.toString();
+    var length = id.length;
+    var first = id[0];
+
+    if (first === '0'){  
+        console.log(id, " starts with 0, skip");
+        return true;
+    };
+
+    var factors = findFactors(parseInt(length));
+    var counter = 0;
+
+    factors.forEach(factor => {
+        const digits = groupNumberByFactor(id, factor);
+        
+        const allEqual = digits => digits.every(v => v === digits[0]);
+
+        if (allEqual(digits)){
+            counter++;
+        }
+    })
+
+    if (counter > 0){
+        return false;
+    }
+
+
+    return true;
+}
+
+const findFactors = (id) => {
+    let factors = [];
+
+    for (let i = 0; i <= id; i++){
+        if (id % i === 0 && i != id){
+            factors.push(i);
+        }
+    }
+    return factors;
+};
+
+const groupNumberByFactor = (num, factor) => {
+  const numString = String(num);
+
+  const regex = new RegExp('.{' + factor + '}', 'g');
+  const groupedArray = numString
+    .match(regex)
+    .map(Number);
+
+  return groupedArray;
+};
