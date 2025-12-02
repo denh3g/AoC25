@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[96614,["/_next/static/chunks/4bdb9ba2efaee135.js"],""]
+3:I[69008,["/_next/static/chunks/5c2fd3e1811c8fe6.js","/_next/static/chunks/58b4d451f2d43d72.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"N8zoH3MpuNymYq0X2al_u","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-gray-900 py-8","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4","children":[["$","$L2",null,{"href":"/","className":"inline-flex items-center text-blue-400 hover:text-blue-300 mb-4","children":[["$","svg",null,{"className":"w-5 h-5 mr-2","fill":"none","stroke":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":2,"d":"M15 19l-7-7 7-7"}]}],"Back to Home"]}],["$","div",null,{"className":"bg-gray-800 rounded-lg shadow-xl p-6 border border-gray-700","children":[["$","h4",null,{"className":"text-2xl font-bold mb-4 text-gray-100","children":"Day1 Page"}],["Part1: ",["$","p",null,{"children":"The answer is: 3"}],"Part2: ",["$","p",null,{"children":"The answer is: 6"}]]]}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/4bdb9ba2efaee135.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

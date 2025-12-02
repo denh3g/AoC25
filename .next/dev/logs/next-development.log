@@ -1,111 +1,31 @@
-[00:00:00.770] Server  LOG      ✓ Ready in 585ms
-[00:00:05.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.034] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/code/AoC2...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:00:11.753] Server  LOG     11
-[00:00:11.753] Server  LOG     22
-[00:00:11.753] Server  LOG     95
-[00:00:11.753] Server  LOG     115
-[00:00:11.753] Server  LOG     998
-[00:00:11.753] Server  LOG     1012
-[00:00:11.753] Server  LOG     1188511880
-[00:00:11.753] Server  LOG     1188511890
-[00:00:11.753] Server  LOG     222220
-[00:00:11.753] Server  LOG     222224
-[00:00:11.753] Server  LOG     
+[00:00:00.281] Server  ERROR   (node:12723) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/dan.hague/code/AoC25/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/dan.hague/code/AoC25/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:00:00.358] Server  LOG      ✓ Ready in 233ms
+[00:00:09.265] Server  LOG     11
+[00:00:09.265] Server  LOG     22
+[00:00:09.265] Server  LOG     95
+[00:00:09.265] Server  LOG     115
+[00:00:09.265] Server  LOG     998
+[00:00:09.265] Server  LOG     1012
+[00:00:09.265] Server  LOG     1188511880
+[00:00:09.265] Server  LOG     1188511890
+[00:00:09.265] Server  LOG     222220
+[00:00:09.266] Server  LOG     222224
+[00:00:09.266] Server  LOG     
 1698522
-[00:00:11.753] Server  LOG     1698528
-[00:00:11.753] Server  LOG     446443
-[00:00:11.753] Server  LOG     446449
-[00:00:11.753] Server  LOG     38593856
-[00:00:11.753] Server  LOG     38593862
-[00:00:11.753] Server  LOG     565653
-[00:00:11.753] Server  LOG     565659
-[00:00:11.753] Server  LOG     
+[00:00:09.266] Server  LOG     1698528
+[00:00:09.266] Server  LOG     446443
+[00:00:09.266] Server  LOG     446449
+[00:00:09.266] Server  LOG     38593856
+[00:00:09.266] Server  LOG     38593862
+[00:00:09.266] Server  LOG     565653
+[00:00:09.266] Server  LOG     565659
+[00:00:09.266] Server  LOG     
 824824821
-[00:00:11.753] Server  LOG     824824827
-[00:00:11.753] Server  LOG     2121212118
-[00:00:11.754] Server  LOG     2121212124
-[00:00:11.754] Server  LOG     partA:  22
-[00:00:50.969] Server  LOG     11
-[00:00:50.969] Server  LOG     22
-[00:00:50.969] Server  LOG     95
-[00:00:50.969] Server  LOG     115
-[00:00:50.969] Server  LOG     998
-[00:00:50.969] Server  LOG     1012
-[00:00:50.969] Server  LOG     1188511880
-[00:00:50.969] Server  LOG     1188511890
-[00:00:50.970] Server  LOG     222220
-[00:00:50.970] Server  LOG     222224
-[00:00:50.970] Server  LOG     
-1698522
-[00:00:50.970] Server  LOG     1698528
-[00:00:50.970] Server  LOG     446443
-[00:00:50.970] Server  LOG     446449
-[00:00:50.970] Server  LOG     38593856
-[00:00:50.970] Server  LOG     38593862
-[00:00:50.970] Server  LOG     565653
-[00:00:50.970] Server  LOG     565659
-[00:00:50.970] Server  LOG     
-824824821
-[00:00:50.970] Server  LOG     824824827
-[00:00:50.970] Server  LOG     2121212118
-[00:00:50.970] Server  LOG     2121212124
-[00:00:50.970] Server  LOG     partA:  22
-[00:01:13.239] Server  LOG     11
-[00:01:13.239] Server  LOG     22
-[00:01:13.239] Server  LOG     95
-[00:01:13.239] Server  LOG     115
-[00:01:13.240] Server  LOG     998
-[00:01:13.240] Server  LOG     1012
-[00:01:13.240] Server  LOG     1188511880
-[00:01:13.240] Server  LOG     1188511890
-[00:01:13.240] Server  LOG     222220
-[00:01:13.240] Server  LOG     222224
-[00:01:13.240] Server  LOG     
-1698522
-[00:01:13.241] Server  LOG     1698528
-[00:01:13.241] Server  LOG     446443
-[00:01:13.241] Server  LOG     446449
-[00:01:13.241] Server  LOG     38593856
-[00:01:13.241] Server  LOG     38593862
-[00:01:13.241] Server  LOG     565653
-[00:01:13.241] Server  LOG     565659
-[00:01:13.241] Server  LOG     
-824824821
-[00:01:13.241] Server  LOG     824824827
-[00:01:13.241] Server  LOG     2121212118
-[00:01:13.241] Server  LOG     2121212124
-[00:01:13.241] Server  LOG     partA:  22
+[00:00:09.266] Server  LOG     824824827
+[00:00:09.266] Server  LOG     2121212118
+[00:00:09.266] Server  LOG     2121212124
+[00:00:09.266] Server  LOG     partA:  22
+[00:00:09.427] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

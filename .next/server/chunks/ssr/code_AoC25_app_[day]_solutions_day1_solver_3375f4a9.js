@@ -1,0 +1,3 @@
+module.exports=[65156,a=>{"use strict";async function b(a){let b=0,c=0,d=50,e=[],f=[];return a.split("\n").forEach(a=>{let b=a[0],c=parseInt(a.slice(1));f.push({dir:b,count:c})}),f.forEach(a=>{for(let b=0;b<a.count;b++)"L"==a.dir?-1==--d&&(d=99):100==++d&&(d=0),0===d&&c++;e.push(d)}),e.forEach(a=>{0===a&&b++}),{partA:b,partB:c}}a.s(["solveDay1",()=>b])}];
+
+//# sourceMappingURL=code_AoC25_app_%5Bday%5D_solutions_day1_solver_3375f4a9.js.map
