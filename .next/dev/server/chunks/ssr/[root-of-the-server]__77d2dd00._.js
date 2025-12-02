@@ -153,13 +153,14 @@ async function getDays() {
 "[project]/code/AoC25/app/[day]/page.jsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
+/* eslint-disable react/prop-types */ __turbopack_context__.s([
     "default",
     ()=>DayPage,
     "generateStaticParams",
     ()=>generateStaticParams
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/code/AoC25/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/code/AoC25/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$Answer$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/code/AoC25/app/components/Answer.jsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$Input$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/code/AoC25/app/components/Input.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$DayLayout$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/code/AoC25/app/components/DayLayout.jsx [app-rsc] (ecmascript)");
@@ -172,10 +173,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$comp
 ;
 ;
 ;
+;
 // Dynamically import solver
 async function getSolver(day) {
     try {
-        const module = await __turbopack_context__.f({
+        const solution = await __turbopack_context__.f({
             "./solutions/day1/solver": {
                 id: ()=>"[project]/code/AoC25/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)",
                 module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)")
@@ -186,7 +188,7 @@ async function getSolver(day) {
             }
         }).import(`./solutions/${day}/solver`);
         const solverName = `solve${day.charAt(0).toUpperCase()}${day.slice(1)}`;
-        return module[solverName] || null;
+        return solution[solverName] || null;
     } catch  {
         return null;
     }
@@ -203,7 +205,7 @@ async function DayPage({ params }) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     }
     const input = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$Input$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])({
-        path: `[day]/solutions/${day}/sample.txt`
+        path: `[day]/solutions/${day}/input.txt`
     });
     const { partA, partB } = await solver(input);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$DayLayout$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -214,7 +216,7 @@ async function DayPage({ params }) {
                 a: partA
             }, void 0, false, {
                 fileName: "[project]/code/AoC25/app/[day]/page.jsx",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 20
             }, this),
             "Part2: ",
@@ -222,13 +224,13 @@ async function DayPage({ params }) {
                 a: partB
             }, void 0, false, {
                 fileName: "[project]/code/AoC25/app/[day]/page.jsx",
-                lineNumber: 39,
+                lineNumber: 41,
                 columnNumber: 20
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/code/AoC25/app/[day]/page.jsx",
-        lineNumber: 37,
+        lineNumber: 39,
         columnNumber: 9
     }, this);
 }

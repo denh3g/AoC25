@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from "react";
 import Answer from "../components/Answer";
 import getInput from "../components/Input";
 import DayLayout from "../components/DayLayout";
@@ -7,9 +9,9 @@ import getDays from "../components/getDays";
 // Dynamically import solver
 async function getSolver(day) {
     try {
-        const module = await import(`./solutions/${day}/solver`);
+        const solution = await import(`./solutions/${day}/solver`);
         const solverName = `solve${day.charAt(0).toUpperCase()}${day.slice(1)}`;
-        return module[solverName] || null;
+        return solution[solverName] || null;
     } catch {
         return null;
     }
@@ -30,7 +32,7 @@ export default async function DayPage({ params }) {
         notFound();
     }
 
-    const input = await getInput({ path: `[day]/solutions/${day}/sample.txt` });
+    const input = await getInput({ path: `[day]/solutions/${day}/input.txt` });
     const { partA, partB } = await solver(input);
 
     return (
