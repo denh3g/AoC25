@@ -179,12 +179,16 @@ async function getSolver(day) {
     try {
         const solution = await __turbopack_context__.f({
             "./solutions/day1/solver": {
-                id: ()=>"[project]/code/AoC25/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/code/AoC25/app/[day]/solutions/day1/solver.jsx [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day1/solver.jsx [app-rsc] (ecmascript, async loader)")
             },
             "./solutions/day2/solver": {
-                id: ()=>"[project]/code/AoC25/app/[day]/solutions/day2/solver.js [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day2/solver.js [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/code/AoC25/app/[day]/solutions/day2/solver.jsx [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day2/solver.jsx [app-rsc] (ecmascript, async loader)")
+            },
+            "./solutions/day3/solver": {
+                id: ()=>"[project]/code/AoC25/app/[day]/solutions/day3/solver.jsx [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/code/AoC25/app/[day]/solutions/day3/solver.jsx [app-rsc] (ecmascript, async loader)")
             }
         }).import(`./solutions/${day}/solver`);
         const solverName = `solve${day.charAt(0).toUpperCase()}${day.slice(1)}`;
@@ -205,7 +209,7 @@ async function DayPage({ params }) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["notFound"])();
     }
     const input = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$Input$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])({
-        path: `[day]/solutions/${day}/sample.txt`
+        path: `[day]/solutions/${day}/input.txt`
     });
     const { partA, partB } = await solver(input);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$code$2f$AoC25$2f$app$2f$components$2f$DayLayout$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {

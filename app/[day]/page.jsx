@@ -32,7 +32,7 @@ export default async function DayPage({ params }) {
         notFound();
     }
 
-    const input = await getInput({ path: `[day]/solutions/${day}/sample.txt` });
+    const input = await getInput({ path: `[day]/solutions/${day}/input.txt` });
     const { partA, partB } = await solver(input);
 
     return (
