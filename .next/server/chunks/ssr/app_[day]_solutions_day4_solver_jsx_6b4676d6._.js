@@ -1,0 +1,3 @@
+module.exports=[53289,a=>{"use strict";async function b(a){let b=0,d=0,e=c(a),f={total:d+=b=e.total,grid:e.grid};for(;f.total>0;)d+=(f=c(a,f.grid)).total;return console.log(d),{partA:b,partB:d}}let c=(a,b)=>{let c=0;b||(b=a.split("\n").map(a=>a.split("")));let d=[[0,-1],[1,0],[0,1],[-1,0],[-1,-1],[-1,1],[1,-1],[1,1]],e=[];for(let a=0;a<b.length;a++)for(let f=0;f<b[a].length;f++){if("@"!==b[a][f])continue;let g=0;for(let[c,e]of d){let d=f+c,h=a+e;for(;h>=0&&h<b.length&&d>=0&&d<b[0].length;){if("@"===b[h][d]){g++;break}if("."!==b[h][d]||"@"!==b[h][d])break;d+=c,h+=e}}g<4&&(c++,e.push([a,f]))}return e.forEach(([a,c])=>{b[a][c]="x"}),{total:c,grid:b}};a.s(["solveDay4",()=>b])}];
+
+//# sourceMappingURL=app_%5Bday%5D_solutions_day4_solver_jsx_6b4676d6._.js.map

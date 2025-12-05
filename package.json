@@ -2,14 +2,18 @@
   "name": "aoc25",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
+    "solve": "node run.js",
+    "sample": "SAMPLE=1 node run.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.6",
+    "next": "^16.0.7",
+    "nodejs": "^0.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },

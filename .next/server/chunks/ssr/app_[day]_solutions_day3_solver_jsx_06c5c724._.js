@@ -1,0 +1,3 @@
+module.exports=[83840,a=>{"use strict";async function b(a){let b=0,d=0,e=a.split("\n");var f=[],g=[];return e.forEach(a=>{f.push(c(a,2)),g.push(c(a,12))}),console.log(f),f.forEach(a=>{b+=a}),console.log(g),g.forEach(a=>{d+=a}),{partA:b,partB:d}}let c=(a,b)=>{let c=a.split("").map((a,b)=>({num:parseInt(a),idx:b})),d=[];for(let b=0;b<a.length-1;b++){let e=c[b].num,f=Math.max(...a.slice(b+1));d.push(""+e+f)}return parseInt(a=Math.max(...d))};a.s(["solveDay3",()=>b])}];
+
+//# sourceMappingURL=app_%5Bday%5D_solutions_day3_solver_jsx_06c5c724._.js.map

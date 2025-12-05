@@ -1,0 +1,3 @@
+module.exports=[61342,a=>{"use strict";async function b(a){let b=0;var c=a.split("\n\n")[0].split("\n").map(a=>a.trim()),d=a.split("\n\n")[1].split("\n").map(a=>a.trim());let e=[];return c=c.forEach(a=>{a=a.split("-");for(let b=a[0];b<=a[1];b++);}),d.forEach(a=>{e.includes(parseInt(a))&&b++}),console.log(b),{partA:b,partB:0}}a.s(["solveDay5",()=>b])}];
+
+//# sourceMappingURL=app_%5Bday%5D_solutions_day5_solver_jsx_7a021cc6._.js.map

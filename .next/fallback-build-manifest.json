@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [
+    "static/nkbfdzCYZCGrQP7-VPNla/_ssgManifest.js",
+    "static/nkbfdzCYZCGrQP7-VPNla/_buildManifest.js"
+  ],
+  "rootMainFiles": []
+}
