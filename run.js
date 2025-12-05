@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -40,7 +40,21 @@ async function runAll(useSample = false) {
   const fileLabel = useSample ? 'Sample Files' : 'Input Files';
   console.log(`\n🎄 Running All Advent of Code Solutions (${fileLabel}) 🎄\n`);
   
-  for (let day = 1; day <= 25; day++) {
+  const solutionsPath = join(__dirname, 'app/[day]/solutions');
+  const availableDays = readdirSync(solutionsPath)
+    .filter(dir => dir.startsWith('day'))
+    .map(dir => parseInt(dir.replace('day', '')))
+    .filter(day => !isNaN(day))
+    .sort((a, b) => a - b);
+  
+  if (availableDays.length === 0) {
+    console.log('No solution days found.\n');
+    return;
+  }
+  
+  console.log(`Found ${availableDays.length} days: ${availableDays.join(', ')}\n`);
+  
+  for (const day of availableDays) {
     await runDay(day, useSample);
   }
 }

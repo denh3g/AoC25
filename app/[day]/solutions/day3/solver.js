@@ -19,6 +19,7 @@ async function solveDay3(input) {
         partB = partB+j;
      })
 
+     partB = 'puzzle incomplete';
 
      return { partA, partB };
 }
