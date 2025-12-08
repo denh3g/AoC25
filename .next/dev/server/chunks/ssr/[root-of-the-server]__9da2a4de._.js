@@ -179,24 +179,28 @@ async function getSolver(day) {
     try {
         const solution = await __turbopack_context__.f({
             "./solutions/day1/solver": {
-                id: ()=>"[project]/app/[day]/solutions/day1/solver.jsx [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day1/solver.jsx [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day1/solver.js [app-rsc] (ecmascript, async loader)")
             },
             "./solutions/day2/solver": {
-                id: ()=>"[project]/app/[day]/solutions/day2/solver.jsx [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day2/solver.jsx [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/app/[day]/solutions/day2/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day2/solver.js [app-rsc] (ecmascript, async loader)")
             },
             "./solutions/day3/solver": {
-                id: ()=>"[project]/app/[day]/solutions/day3/solver.jsx [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day3/solver.jsx [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/app/[day]/solutions/day3/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day3/solver.js [app-rsc] (ecmascript, async loader)")
             },
             "./solutions/day4/solver": {
-                id: ()=>"[project]/app/[day]/solutions/day4/solver.jsx [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day4/solver.jsx [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/app/[day]/solutions/day4/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day4/solver.js [app-rsc] (ecmascript, async loader)")
             },
             "./solutions/day5/solver": {
-                id: ()=>"[project]/app/[day]/solutions/day5/solver.jsx [app-rsc] (ecmascript, async loader)",
-                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day5/solver.jsx [app-rsc] (ecmascript, async loader)")
+                id: ()=>"[project]/app/[day]/solutions/day5/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day5/solver.js [app-rsc] (ecmascript, async loader)")
+            },
+            "./solutions/day6/solver": {
+                id: ()=>"[project]/app/[day]/solutions/day6/solver.js [app-rsc] (ecmascript, async loader)",
+                module: ()=>__turbopack_context__.A("[project]/app/[day]/solutions/day6/solver.js [app-rsc] (ecmascript, async loader)")
             }
         }).import(`./solutions/${day}/solver`);
         const solverName = `solve${day.charAt(0).toUpperCase()}${day.slice(1)}`;

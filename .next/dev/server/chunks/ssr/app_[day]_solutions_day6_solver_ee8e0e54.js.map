@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/home/code/AoC25/app/%5Bday%5D/solutions/day6/solver.js"],"sourcesContent":["async function solveDay6(input) {\n    let partA = 0;\n    let partB = 0;\n\n    input.split('\\n').forEach(line => {\n        console.log(line)\n    });\n\n    return ({ partA, partB });\n}\n\nexport { solveDay6 };"],"names":[],"mappings":";;;;AAAA,eAAe,UAAU,KAAK;IAC1B,IAAI,QAAQ;IACZ,IAAI,QAAQ;IAEZ,MAAM,KAAK,CAAC,MAAM,OAAO,CAAC,CAAA;QACtB,QAAQ,GAAG,CAAC;IAChB;IAEA,OAAQ;QAAE;QAAO;IAAM;AAC3B"}}]
+}
