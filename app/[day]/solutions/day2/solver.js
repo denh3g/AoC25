@@ -1,4 +1,4 @@
-async function solveDay2(input) {
+export async function solveDay2(input) {
     let partA = 0;
     let partB = 0;
 
@@ -97,5 +97,3 @@ const groupNumberByFactor = (num, factor) => {
 
   return groupedArray;
 };
-
-export { solveDay2 };

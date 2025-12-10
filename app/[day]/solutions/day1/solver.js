@@ -1,4 +1,4 @@
-async function solveDay1(input) {
+export async function solveDay1(input) {
     let partA = 0;
     let partB = 0;
 
@@ -41,5 +41,3 @@ async function solveDay1(input) {
 
     return { partA, partB };
 }
-
-export { solveDay1 };

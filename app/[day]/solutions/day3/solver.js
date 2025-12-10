@@ -1,4 +1,4 @@
-async function solveDay3(input) {
+export async function solveDay3(input) {
     let partA = 0;
     let partB = 0;
 
@@ -37,6 +37,4 @@ const combinator = (b, count) => {
    b = Math.max(...combinations);
    return parseInt(b);
 }
-
-export { solveDay3 };
 

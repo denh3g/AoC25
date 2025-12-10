@@ -1,4 +1,4 @@
-async function solveDay7(input){
+export async function solveDay7(input){
 let partA = 0;
 let partB = 0;
 
@@ -104,5 +104,3 @@ lastRow.forEach(c => {
 
 return ({ partA, partB });
 }
-
-export { solveDay7 }

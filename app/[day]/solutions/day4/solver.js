@@ -1,4 +1,4 @@
-async function solveDay4(input) {
+export async function solveDay4(input) {
     let partA = 0;
     let partB = 0;
 
@@ -76,5 +76,3 @@ const solver = (input, grid) => {
 
     return { total, grid };
 };
-
-export { solveDay4 };
